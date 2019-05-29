@@ -8,7 +8,7 @@ deps:
 build:
 	@echo "==> Building for all platforms..."
 	$(foreach GOOS, $(PLATFORMS),\
-	$(shell GOOS=$(GOOS) GOARCH=amd64 go build -o build/$(GOOS)/goff && \
-	tar -czf build/goff-$(GOOS)-amd64.tar.gz build/$(GOOS)/goff))
+	$(shell GOOS=$(GOOS) GOARCH=amd64 go build -o build/$(GOOS)/get-href && \
+	tar -czf build/get-href-$(GOOS)-amd64.tar.gz build/$(GOOS)/get-href))
 
 .PHONY: deps build

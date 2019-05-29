@@ -12,10 +12,10 @@ import (
 )
 
 func main() {
-	scrapURL := flag.String("url", "https://github.com/PuerkitoBio/goquery", "URL for scraping")
-	areaFilter := flag.String("area-filter", "head", "You filter for search href.")
-	findFilter := flag.String("find-filter", "link[hreflang]", "You filter for search href.")
+	areaFilter := flag.String("area-filter", "head", "You global area filter for search href.")
+	findFilter := flag.String("find-filter", "link[hreflang]", "You element filter for search href.")
 	outJSON := flag.Bool("json", false, "Response in json format.")
+	scrapURL := flag.String("url", "https://github.com/PuerkitoBio/goquery", "URL for scraping")
 	flag.Parse()
 
 	officeList := offoceFind(*scrapURL, *areaFilter, *findFilter)
