@@ -8,6 +8,8 @@ make
 ```
 Run:
 ```
+  -area-filter string
+        You filter for search href. (default "head")
   -find-filter string
         You filter for search href. (default "link[hreflang]")
   -json
