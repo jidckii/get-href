@@ -9,9 +9,9 @@ make
 Run:
 ```
   -area-filter string
-        You filter for search href. (default "head")
+        You global area filter for search href. (default "head")
   -find-filter string
-        You filter for search href. (default "link[hreflang]")
+        You element filter for search href. (default "link[hreflang]")
   -json
         Response in json format.
   -url string
